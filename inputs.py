@@ -9,6 +9,7 @@ def manageClick():
 
 myInput = Entry(root, width=50)
 myInput.pack()
+myInput.insert(0, "Enter your name")
 
 myButton = Button(root, text="Click me", command=manageClick)
 myButton.pack()
