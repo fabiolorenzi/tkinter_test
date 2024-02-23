@@ -4,9 +4,15 @@ a = 0
 
 root = Tk()
 
+myLabel = Label(root, text = "hello")
+
 def manageClick():
     global a
+    global myLabel
+
     a += 1
+
+    myLabel.pack_forget()
     myLabel = Label(root, text = "You clicked the button " + str(a) + " times")
     myLabel.pack()
 
